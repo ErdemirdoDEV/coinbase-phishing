@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login</title>
+  <style>
+    :root {
+      --gray0: 255, 255, 255;
+      --gray5: 245, 245, 245;
+      --gray10: 230, 230, 230;
+      --gray20: 200, 200, 200;
+      --gray30: 170, 170, 170;
+      --gray60: 100, 100, 100;
+      --gray100: 30, 30, 30;
+      --blue60: 50, 115, 220;
+      --blue70: 30, 100, 200;
+      --red50: 240, 80, 80;
+      --red60: 220, 50, 50;
+      --cds-font-display: 'Segoe UI', sans-serif;
+      --cds-font-sans: 'Segoe UI', sans-serif;
+      --interactable-height: 40px;
+      --foreground: rgb(var(--gray100));
+      --primary: rgb(var(--blue70));
+    }
+
+    body {
+      background: rgb(var(--gray0));
+      color: rgb(var(--gray100));
+      font-family: var(--cds-font-display);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: rgb(var(--gray0));
+      border: 1px solid rgba(var(--gray60), 0.15);
+      border-radius: 12px;
+      padding: 48px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .login-header h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+      font-weight: 600;
+      color: rgb(var(--gray100));
+    }
+
+    .login-header p {
+      margin: 0;
+      color: rgb(var(--gray60));
+      font-size: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: rgb(var(--gray100));
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid rgba(var(--gray60), 0.3);
+      border-radius: 8px;
+      font-size: 16px;
+      background: rgb(var(--gray0));
+      color: rgb(var(--gray100));
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: rgb(var(--blue70));
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgb(var(--blue70));
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .login-button:hover {
+      background: rgb(var(--blue60));
+    }
+
+    .login-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .error-message {
+      color: rgb(var(--red60));
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .logo svg {
+      fill: rgb(var(--gray100));
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <svg width="48" height="48" viewBox="0 0 48 48">
+        <path d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z"></path>
+      </svg>
+    </div>
+    
+    <div class="login-header">
+      <h1>Admin Login</h1>
+      <p>You can set custom admin username & password from 50. line on backend.</p>
+    </div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit" class="login-button">Sign In</button>
+      
+      <div id="errorMessage" class="error-message">
+        Invalid username or password
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorMessage = document.getElementById('errorMessage');
+      const submitButton = e.target.querySelector('button[type="submit"]');
+      
+      errorMessage.style.display = 'none';
+      
+      submitButton.disabled = true;
+      submitButton.textContent = 'Signing in...';
+      
+      try {
+        const response = await fetch('/admin/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, password })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          window.location.href = '/admin';
+        } else {
+          errorMessage.style.display = 'block';
+          errorMessage.textContent = result.message || 'Invalid username or password';
+        }
+      } catch (error) {
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'An error occurred. Please try again.';
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Sign In';
+      }
+    });
+  </script>
+</body>
+</html>
